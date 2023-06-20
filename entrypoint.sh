@@ -9,4 +9,4 @@ if [ "$INPUT_RUN_INIT" ]; then
 fi
 
 
-sh -c "packer validate ${INPUT_EXTRA_PARAMS} ${INPUT_TEMPLATES_PATH}"
+sh -c "packer validate ${INPUT_ARGS} ${INPUT_TEMPLATES_PATH}"

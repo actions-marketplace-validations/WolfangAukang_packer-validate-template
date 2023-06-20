@@ -6,8 +6,8 @@ inputs:
   run_init:
     description: 'Indicates if it is necessary to run init'
     required: false
-  extra_params:
-    description: 'List of extra parameters needed for the validation'
+  args:
+    description: 'List of extra arguments needed for the validation'
     required: false
     default: ''
   templates_path:
