@@ -3,15 +3,16 @@ name: 'Packer Template Validation'
 author: 'P. <clone.gleeful135+github@anonaddy.me>'
 description: 'Validates a Packer template'
 inputs:
-  who-to-greet:
-    description: 'Who to greet'
+  run_init:
+    description: 'Indicates if it is necessary to run init'
+    required: false
+  extra_params:
+    description: 'List of extra parameters needed for the validation'
+    required: false
+    default: ''
+  templates_path:
+    description: 'Path to Packer templates'
     required: true
-    default: 'World'
-outputs:
-  time:
-    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
