@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 if [ ! -e "$INPUT_TEMPLATES_PATH" ]; then
 	echo "Template file/directory set with TEMPLATES_PATH does not exist." && exit 1
 fi
