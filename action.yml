@@ -2,6 +2,9 @@
 name: 'Packer Template Validation'
 author: 'P. <clone.gleeful135+github@anonaddy.me>'
 description: 'Validates a Packer template'
+branding:
+  icon: search
+  color: green
 inputs:
   run_init:
     description: 'Indicates if it is necessary to run init'
